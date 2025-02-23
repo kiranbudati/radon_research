@@ -115,5 +115,7 @@ final_signals['Datetime'] = pd.to_datetime(final_signals['Datetime']).dt.strftim
 
 # Display the most recent 10 signals
 st.write("Recent Signals (Last 10)")
+st.write(f"Total Signals: {len(final_signals)} | Buy Signals: {len(final_signals[final_signals['final_signal']=="Buy"])} | Sell Signals: {len(final_signals[final_signals['final_signal']=="Sell"])}", )
+
 # st.write(final_signals.head(10).reset_index(drop=True))
 st.dataframe(final_signals.head(10).reset_index(drop=True), use_container_width=True)  # Full width and custom height
