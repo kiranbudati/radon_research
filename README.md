@@ -1,4 +1,4 @@
-# Signals.py
+# Radon Research
 
 ## Overview
 `signals.py` is a Python-based bot that uses technical indicators like RSI, MACD, and custom pivot levels to generate buy and sell signals for Nifty 100 stocks. The app is built using Streamlit for its UI, integrates with Yahoo Finance to fetch stock data, and processes signals using custom logic.
